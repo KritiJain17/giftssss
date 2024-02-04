@@ -6,14 +6,18 @@ function App() {
 
   const handleMouseMove = (event) => {
     setLightPosition({
-      top: event.clientY - 50,
-      left: event.clientX - 50,
+      top: event.clientY,
+      left: event.clientX,
     });
   };
 
   function handleTouchMove(event) {
     event.preventDefault(); // Prevent scrolling
     const touch = event.targetTouches[0];
+    setLightPosition({
+      top: touch.clientY,
+      left: touch.clientX,
+    });
     handleEvent(touch);
   }
 
