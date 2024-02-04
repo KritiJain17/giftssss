@@ -24,9 +24,9 @@ function App() {
   function handleEvent(event) {
     const x = event.pageX || event.clientX;
     const y = event.pageY || event.clientY;
-    document.getElementById(
-      "light"
-    ).style.transform = `translate(${x}px, ${y}px)`;
+    document.getElementById("light").style.transform = `translate(${
+      x - 50
+    }px, ${y - 50}px)`;
   }
 
   useEffect(() => {
