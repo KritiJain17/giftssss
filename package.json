@@ -1,6 +1,7 @@
 {
   "name": "public-repo",
   "version": "0.1.0",
+  "homepage": "https://kritijain17.github.io/giftssss",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,8 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "postdeploy": "rm -rf node_modules/gh-pages/.cache"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
